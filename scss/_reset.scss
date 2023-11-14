@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+   // font-family: 'Space Grotesk', sans-serif;
+    color: #ffffff;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: $gray-900;
+}
+
+

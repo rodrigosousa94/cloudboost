@@ -1,0 +1,121 @@
+.btn-primary{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: $purple-10;
+    display: inline-block;
+    padding: 1.4rem 2.3rem;
+    color: $gray-100;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%; 
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $purple-20;
+    }
+}
+
+.form-email{
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.4rem  0.4rem 0.4rem 2.4rem;
+    @include flex-center;
+    width: 100%;
+    max-width: 52.1rem;
+    gap: 1.6rem;
+    input{
+    all: unset;
+    flex: 1;
+    color: $gray-100;
+    font-size: 1.6rem;
+    line-height: 150%; 
+        &::placeholder{
+            color: $gray-100;
+        }
+    }
+    @include responsivo('tablet'){
+        margin: 0 auto;
+        input{
+            text-align: left;
+        }
+    }
+    @include responsivo('mobile'){
+        justify-content: space-between;
+        input{
+            max-width: 15rem;
+        }
+     .btn-primary{
+        font-size: 1.6rem;
+        padding: 12px 2rem;
+     }
+}}
+
+.card-recurso{
+    width: 100%;
+    max-width: 26.5rem;
+    .icon{
+            width: 4.8rem;
+            height: 4.8rem;
+            @include flexTotalCenter;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 1.6rem;
+    }
+    .text{
+        h6{
+            color: $gray-100;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 120%; /* 21.6px */
+            margin-bottom: 1.6rem;
+        }
+        p{
+            color: $gray-600;
+            font-size: 1.6rem;
+            line-height: 150%; /* 24px */
+        }
+    }
+    @include responsivo('laptop'){
+        max-width: 100%;
+        .icon{
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        .text{
+            text-align: center;
+        }
+    }
+
+    @include responsivo('tablet'){
+       
+    }
+
+    @include responsivo('mobile'){
+        
+    }
+}
+
+.review{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+   & > div{
+        @include flex-center;
+        gap: 0.4rem;
+        span{
+            color: $gray-100;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 150%;
+           strong{
+            color: $gray-600;
+            font-weight: 400;
+           } 
+        }
+    }
+    @include responsivo('tablet'){
+        justify-content: center;
+    }
+}
+    
